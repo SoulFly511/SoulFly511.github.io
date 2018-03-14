@@ -11,115 +11,133 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <img src="resources/images/lol_wallpaper.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-sm">
-        <ul>
-          <li>
+
+    <div class="p-3 mb-2 bg-secondary text-white" style="height: 100vh;">
+
+        <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <img src="resources/images/lol_wallpaper.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+          <div class="col-sm">
             <a href="champions.html">
-              <span>champion guides</span>
+              <div class="navigation">
+                  <span>champion guides</span>
+              </div>
             </a>
-          </li>
-          <li>
             <a href="items.html">
-              <span>items</span>
+              <div class="navigation">
+                  <span>items</span>
+              </div>
             </a>
-          </li>
-          <li>
             <a href="counter.html">
-              <span>counter</span>
+              <div class="navigation">
+                  <span>counter</span>
+              </div>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
 
+
+      <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>Win rates</h2>
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Role</th>
+                <th scope="col">Highest</th>
+                <th scope="col">Lowest</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Top</th>
+                <td>Singed 52,6%</td>
+                <td>Galio 44,2%</td>
+              </tr>
+              <tr>
+                <th scope="row">Jungle</th>
+                <td>Nunu 44,4%</td>
+                <td>Kai'sa 42,4%</td>
+              </tr>
+              <tr>
+                <th scope="row">Middle</th>
+                <td>Zilean 54.4%</td>
+                <td>Azir 45.2%</td>
+              </tr>
+              <tr>
+                <th scope="row">ADC</th>
+                <td>Twitch 52.1%</td>
+                <td>Kai'Sa 44.4%</td>
+              </tr>
+              <tr>
+                <th scope="row">Support</th>
+                <td>Rek'Sai 55.0%</td>
+                <td>Annie 44.2%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-sm">
+          <h2>Overall performance ranking</h2>
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Role</th>
+                <th scope="col">Best</th>
+                <th scope="col">Worst</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Top</th>
+                <td>Sion</td>
+                <td>galio</td>
+              </tr>
+              <tr>
+                <th scope="row">Jungle</th>
+                <td>Warwick</td>
+                <td>Ivern</td>
+              </tr>
+              <tr>
+                <th scope="row">Middle</th>
+                <td>Zed</td>
+                <td>Gragas</td>
+              </tr>
+              <tr>
+                <th scope="row">ADC</th>
+                <td>Xayah</td>
+                <td>Kalista</td>
+              </tr>
+              <tr>
+                <th scope="row">Support</th>
+                <td>Janna</td>
+                <td>Ivern</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-    <table style="width:100%;" border="1">
-      <tr>
-        <th>
-          <span>role</span>
-        </th>
-        <th>
-          <span>highest</span>
-        </th>
-        <th>
-          <span>lowest</span>
-        </th>
-      </tr>
-
-      <tr>
-        <td>
-          <span>Top</span>
-        </td>
-        <td>
-          <span>singed 52,6%</span>
-        </td>
-        <td>
-          <span>galio 44,2%</span>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <span>Jungle</span>
-        </td>
-        <td>
-          <span>nunu 44,4%</span>
-        </td>
-        <td>
-          <span>kai'sa 42,4%</span>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          Middle
-        </td>
-        <td>
-          <span>Zilean 54.4%</span>
-        </td>
-        <td>
-          <span>Azir 45.2%</span>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <span>ADC</span>
-        </td>
-        <td>
-          <span>Twitch 52.1%</span>
-        </td>
-        <td>
-          <span>Kai'Sa 44.4%</span>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <span>Support</span>
-        </td>
-        <td>
-          <span>Rek'Sai 55.0%</span>
-        </td>
-        <td>
-          <span>Annie 44.2%</span>
-        </td>
-      </tr>
-
-    </table>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+      .navigation {
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 25px;
+        color: white;
+        background-color: black;
+      }
+    </style>
   </body>
 </html>
