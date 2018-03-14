@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <div class="p-3 mb-2 bg-secondary text-white" style="height: 100vh;">
+    <div class="p-3 mb-2 bg-secondary text-white" style="min-height: 100vh;">
 
         <div class="container">
         <div class="row">
@@ -28,7 +28,7 @@
                 </span>
             </div>
           </a>
-            <a href="anfänger_guides.html">
+            <a href="anfaenger_guides.html">
               <div class="navigation">
                   <span>
                     <FONT SIZE="5">Anfänger guides</FONT>
@@ -132,10 +132,47 @@
           </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+
+
+
+
+            <div class="d-flex flex-wrap">
+              <a class="held-link" href="http://champion.gg/champion/Aatrox/Top?">
+                <div class="held-container mx-2">
+                    <img class="held-bild" src="https://lh4.ggpht.com/lGnjgJJXy3llKsZMM6FAGrn8bj5SMZSX3xbvLpnucHPvqkThTqLgLn6t6vZ95HcSejI=w300">
+                    <div class="held-text">Aatrox</div>
+                </div>
+              </a>
+
+              <a class="held-link" href="http://www.google.de">
+                <div class="held-container mx-2">
+                    <img class="held-bild" src="https://d1u5p3l4wpay3k.cloudfront.net/lolesports_gamepedia_en/1/18/AhriSquare.png">
+                    <div class="held-text">Ahri</div>
+                </div>
+              </a>
+
+              <a class="held-link" href="http://www.google.de">
+                <div class="held-container mx-2">
+                    <img class="held-bild" src="https://d1u5p3l4wpay3k.cloudfront.net/lolesports_gamepedia_en/9/97/AkaliSquare_Old.png?version=773ade5ba79fe10152300d599c110603">
+                    <div class="held-text">Akali</div>
+                </div>
+              </a>
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -155,6 +192,31 @@
         margin-bottom: 15px;
         color: black;
         background-color: white;
+      }
+
+      .held-link {
+        text-decoration: none !important;
+      }
+
+      .held-container {
+        width: fit-content;
+      }
+
+      .held-container:hover > .held-bild {
+        transform: scale(1.05);
+      }
+
+      .held-bild {
+        height: 70px;
+        width: 70px;
+        transition: all .05s;
+      }
+
+
+      .held-text {
+        text-align: center;
+        color: black;
+        text-decoration: none;
       }
     </style>
   </body>
