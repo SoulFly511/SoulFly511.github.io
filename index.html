@@ -136,7 +136,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <table class="table table-striped table-dark">
+          <table id="win_rate_table" class="table table-striped table-dark">
             <thead>
               <tr>
                 <th scope="col">Role</th>
@@ -283,11 +283,20 @@
           url: "http://api.champion.gg/v2/overall?elo=GOLD&api_key=00bf04b1405f48eb886b280943103685",
       }).then(function(data) {
          console.log(data);
+
+         $.each( data[0].positions, function( key, value ) {
+           $( "#win_rate_table" ).append( "<tr><td>"+key+"</td><td>"+value.winrate.best.championId+" "+precisionRound(value.winrate.best.score * 100, 1)+"%</td><td>"+value.winrate.worst.championId+" "+precisionRound(value.winrate.worst.score * 100, 1)+"%</td></tr>" );
+         });
          //$('.greeting-id').append(data.id);
          //$('.greeting-content').append(data.content);
       });
 
     });
+
+    function precisionRound(number, precision) {
+      var factor = Math.pow(10, precision);
+      return Math.round(number * factor) / factor;
+    }
     </script>
 
     <style>
