@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>I bims 1 website</title>
   </head>
   <body>
 
@@ -133,6 +133,22 @@
         </div>
       </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Role</th>
+                <th scope="col">Highest</th>
+                <th scope="col">Lowest</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+
       <div class="container">
         <div class="row">
           <div class="col-sm">
@@ -253,15 +269,6 @@
         </div>
       </div>
 
-      <div>
-        <div class="greeting-id">
-
-        </div>
-        <div class="greeting-content">
-
-        </div>
-      </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -272,7 +279,8 @@
 
     $(document).ready(function() {
       $.ajax({
-          url: "http://api.champion.gg/v2/champions?api_key=00bf04b1405f48eb886b280943103685",
+          //url: "http://api.champion.gg/v2/champions?api_key=00bf04b1405f48eb886b280943103685",
+          url: "http://api.champion.gg/v2/overall?elo=GOLD&api_key=00bf04b1405f48eb886b280943103685",
       }).then(function(data) {
          console.log(data);
          //$('.greeting-id').append(data.id);
