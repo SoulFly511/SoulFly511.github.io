@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <title>Long Sword</title>
+  <title>Health Potion</title>
 </head>
 
 <body>
@@ -20,9 +20,7 @@
         <div class="col-sm">
           <div class="heading">
             <span>
-              <div class="heading">
-                <h3>Long sword</h3>
-              </div>
+              <h3>Health Potion</h3>
             </span>
           </div>
         </div>
@@ -31,19 +29,25 @@
       <div class="row">
         <div class="col-sm">
           <div>
-            <img class="item-img" src="https://www.mobafire.com/images/item/long-sword.gif">
+            <img class="item-img" src="http://ddragon.leagueoflegends.com/cdn/8.5.1/img/item/2003.png">
           </div>
           <div>
-            <span>350 Total Gold</span>
+            <span><span class="text-gold">50</span> Total Gold</span>
           </div>
           <div>
-            <span>+ 10 Attack Damage</span>
+            <span><FONT color="silver"><i>Limited to 5 at one time. Limited to 1 type of Healing Potion.</i></FONT></span>
+          </div>
+          <div>
+            <span> </span>
+          </div>
+          <div>
+            <span><b>Click to Consume:</b> Restores <span class="text-health">150 Health</span> over 15 seconds.</span>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-8 offset-4">
+        <div class="col-">
           <div class="heading">
             <h3>ITEM RECIPE</h3>
           </div>
@@ -55,13 +59,13 @@
           <div class="d-flex">
             <div>
               <div>
-                <img class="item-img" src="https://www.mobafire.com/images/item/long-sword.gif">
+                <img class="item-img" src="http://ddragon.leagueoflegends.com/cdn/8.5.1/img/item/2003.png">
               </div>
               <div>
-                <span>Long sword</span>
+                <span>Health potion</span>
               </div>
               <div>
-                <span>350 Gold</span>
+                <span><span class="text-gold">50</span> Gold</span>
               </div>
             </div>
           </div>
@@ -113,7 +117,19 @@
   }
 
   .heading {
-    margin-top:
+    margin-top: 10px;
+  }
+
+  .limited-item {
+    color: silver;
+  }
+
+  .text-gold {
+    color: yellow;
+  }
+
+  .text-health {
+    color: red;
   }
 </style>
 

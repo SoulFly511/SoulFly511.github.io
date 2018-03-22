@@ -32,16 +32,16 @@
             <img class="item-img" src="https://d1u5p3l4wpay3k.cloudfront.net/lolesports_gamepedia_en/e/ef/Refillable_Potion_Old.png">
           </div>
           <div>
-            <span><FONT color="yellow">150</FONT> Total Gold</span>
+            <span><span class="text-gold">150</span> Total Gold</span>
           </div>
           <div>
-            <span><FONT color="silver"><i>Limited to 1 type of Healing Potion.</i></FONT></span>
+            <span><span class="limited-item"><i>Limited to 1 type of Healing Potion.</i></span></span>
           </div>
           <div>
             <span> </span>
           </div>
           <div>
-            <span><b>UNIQUE Active:</b> Consumes a charge to restore <FONT color="red"> 125 Health</FONT> over 12 seconds. Holds up to 2 charges and refills upon visiting the shop.</span>
+            <span><b>UNIQUE Active:</b> Consumes a charge to restore <span class="text-health"> 125 Health</span> over 12 seconds. Holds up to 2 charges and refills upon visiting the shop.</span>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
                 <span>Refillable Potion</span>
               </div>
               <div>
-                <span><FONT color="yellow">150</FONT> Gold</span>
+                <span><span class="text-gold">150</span> Gold</span>
               </div>
             </div>
           </div>
@@ -117,8 +117,20 @@
 
   .heading {
     margin-top: 10px;
-
   }
+
+  .limited-item {
+    color: silver;
+  }
+
+  .text-gold {
+    color: yellow;
+  }
+
+  .text-health {
+    color: red;
+  }
+
 </style>
 
 
