@@ -1,0 +1,133 @@
+.item-img {
+  height: 60px;
+  width: 60px;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.item-2-img {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.img-border {
+  border: 2px solid red;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.heading {
+  margin-top: 10px;
+
+}
+
+.node {
+  text-align: center;
+}
+
+.node .node-content {
+  display: inline;
+}
+
+.node .line {
+  position: relative;
+  height: 40px;
+}
+
+.node .line > div {
+  background: orange;
+  position: absolute;
+}
+
+.node .line > .line-1 {
+  width: 2px;
+  height: 20px;
+  left: 50%;
+}
+
+.node .line > .line-2 {
+  width: 50%;
+  height: 2px;
+  left: 25%;
+  top: 20px;
+}
+
+.node .line > .line-3 {
+  width: 2px;
+  height: 20px;
+  left: 25%;
+  top: 20px;
+}
+
+.node .line > .line-4 {
+  width: 2px;
+  height: 20px;
+  left: 75%;
+  top: 20px;
+}
+
+.node .line > .line-5 {
+  width: 2px;
+  height: 20px;
+  left: 50%;
+  top: 20px;
+}
+
+.node-1 .line > .line-1 {
+  height: 40px;
+}
+
+.node-1 .line > .line-2,
+.node-1 .line > .line-3,
+.node-1 .line > .line-4 {
+  display: none;
+}
+
+.node-3 > .line > .line-2 {
+  width: 66.6%;
+  left: 16.7%;
+}
+
+.node-3 > .line > .line-3 {
+  left: 16.7%;
+}
+
+.node-3 > .line > .line-4 {
+  left: 83.3%
+}
+
+.node-2 > .node {
+  width: 50%;
+  float: left;
+}
+
+.node-3 > .node {
+  width: 33.3%;
+  float: left;
+}
+
+.item-name {
+  display: block;
+}
+
+.item-gold {
+  display: block;
+}
+
+.text-gold {
+  color: yellow;
+}
+
+.item-description {
+  color: blue;
+}
